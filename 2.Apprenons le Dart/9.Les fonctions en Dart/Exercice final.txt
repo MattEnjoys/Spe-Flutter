@@ -1,0 +1,33 @@
+Question
+Créez une fonction prenant en paramètre une String « chanson ». Ce paramètre peut ne pas être renseigné, mais la fonction s'exécutera quand même sans erreur : elle affichera alors « Je n'ai pas de chanson préférée ». Si le paramètre est renseigné, ma fonction affichera « Ma chanson préférée est » suivi de mon paramètre.
+
+	SOLUTION
+
+void chanson([String chanson]) {
+	If (chanson != Null)
+	{ 
+		print("Ma chanson préférée est " + chanson)
+	}
+	Else {
+		print("Je n'ai pas de chanson préférée");
+ 	}
+}
+Question
+Créez une fonction avec la syntaxe arrow, qui affiche simplement son paramètre. Il peut être de tout type (en le convertissant en String).
+
+	SOLUTION
+
+void afficher(cequejeveuxafficher) => print(cequejeveuxafficher.toString());
+
+Question
+Créez une fonction prenant en paramètre un paramètre obligatoire et un paramètre optionnel nommé avec valeur par défaut. Le paramètre obligatoire sera le nom d'un film, et le paramètre optionnel sera la durée du film (sous forme de String, exemple : 1 h 24). La valeur par défaut de ce paramètre sera durée inconnue.
+
+Le programme devra afficher : je regarde + nomdufilm + de + durée.
+
+Exemple : Je regarde Titanic de durée 3 h, Je regarde Titanic de durée inconnnue.
+
+	SOLUTION
+
+void jeregarde(String nomdufilm, {String durée = 'durée inconnue' }) {
+	print("Je regarde " + nomdufilm + " de " + duree);
+ }

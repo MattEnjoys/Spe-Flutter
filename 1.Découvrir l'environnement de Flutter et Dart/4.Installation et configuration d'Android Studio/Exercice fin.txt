@@ -1,0 +1,15 @@
+Vous dirigez une société créant des applications. Vous prenez des stagiaires, mais certains d'entre eux n'ont pas Android Studio. Vous décidez de prendre une petite heure pour les aider à l'installer.
+
+Question
+Un des stagiaires vous informe qu'il n'est pas certain de pouvoir faire fonctionner Android Studio, car il a un nouveau Mac avec la puce M1, et beaucoup de ses programmes connaissent des erreurs. Il panique un petit peu. Que lui répondez-vous ?
+
+	SOLUTION
+
+Vous lui dites de ne pas paniquer et lui montrez qu'il y a, justement, un fichier d'installation prévu à cet effet. De plus, vous pouvez vérifier avec lui que son Mac répond bien aux critères en termes de performance énumérés sur le site : Android Studio.
+
+Question
+Un stagiaire assez curieux se demande comment il est possible de tester une application. Quelle est la bonne réponse à lui apporter ?
+
+	SOLUTION
+
+L'outil le plus simple pour cela est d'utiliser un émulateur - pratique, et un gain de temps considérable.

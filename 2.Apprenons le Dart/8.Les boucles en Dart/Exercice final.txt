@@ -1,0 +1,46 @@
+Maintenant que les boucles n'ont plus de secret pour vous, il est temps de mettre vos connaissances en pratique !
+
+Vous venez d'apprendre les boucles en Dart, pour effectuer un test, nous vous demandons de mettre en application votre apprentissage avec un exercice pratique.
+
+Question
+Vous devrez créer un triangle dans le terminal, composé de * grâce à l'exécution successive d'instructions, comme ci-dessous :
+
+**********
+
+*********
+
+********
+
+*******
+
+******
+
+*****
+
+****
+
+***
+
+**
+
+*
+
+Indice
+Note : pour aller à la ligne, il ne faut pas oublier le « \n » !
+
+	SOLUTION
+
+Il s'agit d'une solution possible, mais on peut également utiliser des boucles while !
+
+import 'dart:io';
+
+main() {
+  var z = 10; //le nombre de lignes à imprimer
+  for (var i = 0; i < z; i++) {
+    for (var j = 10; j > i; j--) {
+      stdout.write("*");
+    }
+    stdout.write("\n");
+  }
+  return 0;
+}

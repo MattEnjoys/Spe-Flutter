@@ -1,0 +1,29 @@
+Vous êtes développeur chez Apple, on vous demande d’installer et de configurer Xcode sur votre Mac.
+
+Question
+Qu’est-ce que Xcode ?
+
+	SOLUTION
+
+Xcode est un IDE (Integrated Development Environment) développé et proposé par Apple. Son objectif premier est de permettre aux développeurs de créer des applications pour les appareils d’Apple comme le Mac, l’iPad, l’iPhone ou tous les autres appareils permettant de recevoir et de lancer des applications.
+
+Question
+Énoncez les étapes de la configuration d’Xcode.
+
+	SOLUTION
+
+Étape 1 : télécharger et installer Xcode,
+
+Étape 2 : utiliser l’App Server afin de configurer Xcode,
+
+Étape 3 : il faut créer un dépôt de git,
+
+Étape 4 :  une fois votre dépôt git source créer, il faut activer le service,
+
+Étape 5 : ajouter le server dans vos préférences,
+
+Étape 6 : créer un robot d’assemblage, de préférence la nuit,
+
+Étape 7 : afficher le rapport d’assemblage,
+
+Étape 8 : exécuter une intégration dans Xcode avec le robot puis l’afficher sur Safari.

@@ -1,0 +1,98 @@
+Dans cet exercice, nous allons utiliser et mettre en application les différents types d'objets vus dans ce cours. Les réponses doivent être ajoutées successivement à un programme en Dart que vous devez exécuter (pour simplifier l'environnement, le DartPad peut être utilisé : DartPad).
+
+Question
+Déclarez une chaîne de caractères comprenant "Hello world".
+
+	SOLUTION
+
+// On assigne la valeur "Hello world" à la variable a.
+
+var a = "Hello world";
+
+Question
+Affichez dans la console le caractère présent à l'index 7 de cette chaîne.
+
+	SOLUTION
+
+// On affiche le caractère situé à l'index 7 de la chaîne de caractères.
+
+print(a[7]);
+
+// Cela affiche le caractère o.
+
+Question
+Utilisez la méthode de votre choix pour remplacer le mot "Hello" de cette chaîne de caractères par le mot "Hi". Affichez le résultat dans la console.
+
+	SOLUTION
+
+// On utilise la méthode replaceAll pour remplacer les mots concernés.
+
+var b = a.replaceAll("Hello", "Hi");
+
+print(b);
+
+// Cela affiche dans la console : Hi world.
+
+Question
+Utilisez la méthode de votre choix pour ne garder que la partie de la chaîne comprenant le mot "Hi". Affichez le résultat dans la console.
+
+	SOLUTION
+
+// On utilise la méthode substring pour couper la string à l'index 2.
+
+var c = b.substring(0, 2);
+
+// Il est également possible d'utiliser la méthode split pour séparer la String au niveau de l'espace blanc, puis d'en récupérer le premier élément.
+
+// var c = b.split(" ")[0];
+
+print(c);
+
+// Cela affiche dans la console : Hi.
+
+Question
+Déclarez un entier égal à -5 et utilisez la méthode correspondante pour savoir si le nombre est pair. Affichez le résultat dans la console.
+
+	SOLUTION
+
+// On assigne la valeur -5 à la variable d.
+
+var d = -5;
+
+// On utilise la méthode isEven pour savoir si le nombre est pair.
+
+print(d.isEven);
+
+// Cela affiche dans la console : false.
+
+Question
+Affichez la valeur absolue de ce nombre dans la console, en utilisant la méthode correspondante.
+
+	SOLUTION
+
+// On utilise la méthode abs pour retourner la valeur absolue du nombre.
+
+print(d.abs());
+
+// Cela affiche dans la console : 5.
+
+Question
+Déclarez une variable booléenne égale à false, convertissez-la en String puis affichez le résultat dans la console.
+
+	SOLUTION
+
+// On assigne la valeur false à la variable e.
+
+var e = false;
+
+// On utilise la méthode toString pour la convertir en string.
+
+print(e.toString());
+
+// Cela affiche dans la console : false.
+
+Exemple de programme final :
+
+
+Résultat affiché dans la console :
+

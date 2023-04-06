@@ -1,0 +1,21 @@
+Votre entreprise actuelle, une TPE, souhaite développer un logiciel sur Java. Néanmoins, c'est la première fois que l'entreprise fait cela et on vous demande de commencer les démarches pour trouver un logiciel permettant de faire cela. Vous proposez Eclipse à votre hiérarchie et ils acceptent.
+
+Question
+Vous avez choisi Eclipse comme solution. Présenter pourquoi avoir choisi cela.
+
+	SOLUTION
+
+La gratuité,
+
+La souplesse d'utilisation (les langages supportés),
+
+La simplicité d'utilisation,
+
+La possibilité d'utilisation sur Windows / Linus / Mac.
+
+Question
+Vous rencontrez une erreur dans votre code, mais ne trouvez pas de solutions. Que faites-vous ?
+
+	SOLUTION
+
+Vous utilisez l'outil « DEBUG » ou bien faites un CTRL + 1 (ou ⌘ + 1) ce qui ouvrira une fenêtre proposant des suggestions pour résoudre le problème.

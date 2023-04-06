@@ -1,0 +1,114 @@
+Dans cet exercice, nous allons utiliser et mettre en application les différentes structures de données vues dans ce cours. Les réponses doivent être ajoutées successivement à un programme en Dart que vous devez exécuter (pour simplifier l'environnement, le DartPad peut être utilisé : DartPad)
+
+Question
+Déclarez une liste comprenant les entiers 103, 45 et 68. Affichez la longueur de cette liste dans la console.
+
+	SOLUTION
+
+// On implémente la liste d'entiers avec les nombres 103, 45 et 68.
+
+var a = [103, 45, 68];
+
+// On utilise la propriété length pour récupérer la longueur de la liste.
+
+print(a.length);
+
+// Cela affiche dans la console : 3
+
+Question
+Utilisez la méthode de votre choix pour récupérer le dernier élément de la liste de façon générique. Affichez le résultat dans la console.
+
+	SOLUTION
+
+// On utilise la propriété last pour récupérer le dernier élément de la liste.
+
+print(a.last);
+
+// Il est également possible d'utiliser la longueur pour cela.
+
+print(a[a.length - 1]);
+
+// Cela affiche dans la console : 68
+
+Question
+Utilisez la méthode correspondante pour ajouter l'entier 74 à l'index 2 de la liste. Affichez le résultat dans la console.
+
+	SOLUTION
+
+// On utilise la méthode insert pour insérer l'entier 74 à l'index 2.
+
+a.insert(2, 74);
+
+print(a);
+
+// Cela affiche dans la console : [103, 45, 74, 68]
+
+Question
+Utilisez la méthode correspondante pour trier les entiers de la liste dans un ordre croissant. Affichez le résultat dans la console.
+
+	SOLUTION
+
+// On utilise la méthode sort pour trier la liste par ordre croissant.
+
+a.sort();
+
+print(a);
+
+// Cela affiche dans la console : [45, 68, 74, 103]
+
+Question
+Déclarez une map qui à la clé "Hello" associe 3, et à la clé "Bonjour" associe 5. Affichez la longueur de cette map dans la console. Affichez le résultat dans la console.
+
+	SOLUTION
+
+// On implémente la map avec les paires clé-valeur : "Hello" 3 et "Bonjour" 5.
+
+var b = {"Hello" : 3, "Bonjour" : 5};
+
+// On utilise la propriété length pour récupérer la longueur de la map.
+
+print(b.length);
+
+// Cela affiche dans la console : 2
+
+Question
+Utilisez la méthode correspondante pour ajouter la paire clé-valeur { "Hi" : 1 } à la map. Affichez le résultat dans la console.
+
+	SOLUTION
+
+// On utilise la méthode addAll pour insérer la paire clé-valeur : "Hi" 1.
+
+b.addAll({"Hi" : 1});
+
+print(b);
+
+// Cela affiche dans la console : {Hello: 3, Bonjour: 5, Hi: 1}
+
+Question
+Affichez l'ensemble des clés de la map dans la console en utilisant la propriété correspondante.
+
+	SOLUTION
+
+// On utilise la propriété keys pour récupérer les clés de la map.
+
+print(b.keys);
+
+// Cela affiche dans la console : (Hello, Bonjour, Hi)
+
+Question
+Effacez toutes les paires clé-valeur de la map puis affichez le résultat dans la console.
+
+	SOLUTION
+
+// On utilise la méthode clear pour effacer toutes les paires clé-valeur.
+
+b.clear();
+
+print(b);
+
+// Cela affiche dans la console : {}
+
+Exemple de programme final :
+
+
+Résultat affiché dans la console :

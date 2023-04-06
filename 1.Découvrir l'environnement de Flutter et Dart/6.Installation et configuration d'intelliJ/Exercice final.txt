@@ -1,0 +1,15 @@
+Vous êtes chef de projet chez AppliCréa, société créant des applications. Aujourd'hui, 3 stagiaires viennent de rejoindre votre équipe. Ils n'ont pas encore IntelliJ et ont quelques questions. Vous les aidez pour installer ce dernier.
+
+Question
+Un des nouveaux stagiaires semble avoir un problème : IntelliJ se lance, mais crash à chaque fois. Il ne comprend pas. Néanmoins, il semble avoir un ordinateur qui n'est pas tout jeune. Quelle démarche adoptez-vous ?
+
+	SOLUTION
+
+Comme nous l'avons vu, il y a une configuration à avoir au minimum pour faire tourner IntelliJ. Vous regardez avec lui si son PC est en mesure de le faire tourner : il n'a peut-être pas les 2 GB de ram requis. Si c'est le cas, dites-lui que racheter un ordinateur n'est pas obligatoire et qu'il peut simplement acheter de nouvelles barrettes de RAM.
+
+Question
+Quelle est la démarche à suivre pour installer Dart et Flutter ?
+
+	SOLUTION
+
+Sur le menu d'accueil, il suffit d'aller dans l'onglet situé sur la gauche qui s'intitule « Plugins ». Par la suite, il faut simplement rechercher Dart et Flutter, puis les installer. Attention, il faut redémarrer IntelliJ après avoir fait cela.

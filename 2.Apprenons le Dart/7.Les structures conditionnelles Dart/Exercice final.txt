@@ -1,0 +1,44 @@
+Grâce aux conditions, il nous est possible de faire répondre nos programmes à une multitude de questions à notre place. Par exemple, pour un très grand nombre, il peut nous être difficile de déterminer très rapidement s'il s'agit d'un multiple de 3. Avec la puissance de calcul d'un ordinateur, en revanche, c'est presque instantané !
+
+Question
+Créez un programme nous indiquant si la valeur d'une variable est un multiple de 2 ou un multiple de 3, ou si elle n'est divisible ni par l'un ni par l'autre.
+
+Si la variable est égale à 3 ou à 2, nous souhaiterions également afficher « La variable est égale à 3 » ou « La variable est égale à 2 ».
+
+Exemple : si nous mettons var nombre = 3, le programme affiche « La variable est un multiple de 3 ! » puis « La variable est égale à 3 ! ».
+
+Si nous mettons var nombre = 4, le programme affiche « La variable est un multiple de 2 ! » puis « La variable n'est pas 2 ! ».
+
+Si nous mettons var nombre = 7, le programme affiche « La variable n'est ni un multiple de 3 ni un multiple de 2 ».
+
+	SOLUTION
+
+Cet exercice requiert deux types de structures conditionnelles : des alternatives et une généralisée.
+
+Note : il aurait aussi été possible d'utiliser l'instruction switch.
+
+import 'dart:io';
+
+main() { 
+  var i = 4;
+
+	if (i % 2 == 0) {
+		print('La variable est un multiple de 2 !'); 
+ 		if (i == 2) {
+			print('La variable est égale à 2');
+		} else {
+			print("La variable n'est pas 2 !");
+		}
+	} else if (i % 3 == 0) {
+		print('La variable est un multiple de 3 !');
+ 
+	if (i == 3) {
+		print('La variable est égale à 3');
+	} else {
+		print("La variable n'est pas 3!");
+	}
+	} else {
+		print('La variable n'est ni un multiple de 3 ni un multiple de 2 ');
+	}
+	return 0;
+}

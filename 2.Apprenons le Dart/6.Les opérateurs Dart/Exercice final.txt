@@ -1,0 +1,78 @@
+Dans cet exercice, nous allons utiliser et mettre en application les différents opérateurs vus dans ce cours. Les réponses doivent être ajoutées successivement à un programme en Dart que vous devez compiler (pour simplifier l'environnement, le DartPad peut être utilisé : https://dartpad.dev/).
+
+Question
+Déclarez une variable a et assignez lui la valeur 5.
+
+	SOLUTION
+
+On assigne la valeur 5 à la variable a.
+
+var a = 5;
+
+Question
+Utilisez une assignation composée pour monter la valeur de la variable a à 20.
+
+	SOLUTION
+
+On utilise une assignation composée pour monter la valeur à 20.
+
+a += 15;
+
+a *= 4 est aussi une solution valable.
+
+Question
+Déclarez une variable b et assignez lui la multiplication de la variable a par 10.
+
+	SOLUTION
+
+On assigne à la variable b la multiplication de la variable a par 10.
+
+var b = a * 10;
+
+Question
+Testez si la valeur de la variable a est supérieure strictement à 10 ET si la variable b est inférieure ou égale à 200. Affichez le résultat dans la console avec la fonction print.
+
+	SOLUTION
+
+On compare la variable a strictement supérieure à 10 ET la variable b inférieure ou égale à 200.
+
+print(a > 10 && b <= 200);
+
+Question
+Testez si la variable a est de type String avec l'opérateur correspondant. Affichez le résultat dans la console avec la fonction print.
+
+	SOLUTION
+
+On teste si la variable a est de type String.
+
+print(a is String);
+
+Question
+Utilisez un opérateur d'expression conditionnelle pour assigner la variable b à la variable a si celle-ci est non nulle. Si celle-ci est nulle, assignez la valeur 2.
+
+	SOLUTION
+
+On utilise une expression conditionnelle pour assigner b (si b est non nulle) ou 2 (si b est nulle), à la variable a.
+
+a = b ?? 2;
+
+Question
+Déclarez deux chaînes de caractères de votre choix puis concaténez-les avec un opérateur arithmétique. Affichez le résultat dans la console avec la fonction print.
+
+	SOLUTION
+
+On déclare deux chaînes de caractères, et on utilise l'opérateur d'addition pour les concaténer.
+
+var c = "Hello ";
+
+var d = "World !";
+
+ 
+
+print(c + d);
+
+Exemple
+Programme final
+
+Résultat affiché dans la console :
+

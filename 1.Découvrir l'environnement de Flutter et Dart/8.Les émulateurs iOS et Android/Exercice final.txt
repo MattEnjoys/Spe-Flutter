@@ -1,0 +1,15 @@
+Votre patron, grand nostalgique de jeux vidéo, vous demande au travers d'une conversation si vous connaissez des émulateurs pouvant l'aider à retrouver ses jeux d'enfance. Vous lui répondez que s'il vous laisse une petite heure, vous serez en mesure de l'aider. Il accepte.
+
+Question
+Votre patron vous dit qu'il adore l'ancien jeu vidéo Pokémon qu'il avait sur sa Gameboy. Que lui conseillez-vous ?
+
+	SOLUTION
+
+Vous lui conseillez GBA4iOS qui permet de faire tourner les anciens jeux Gameboy. Néanmoins, vous vérifiez avec votre patron qu'il a bien suffisamment de RAM (2 GO) pour faire fonctionner cet émulateur.
+
+Question
+Content de votre aide, votre patron parle de son expérience avec les autres employés. Certains d'entre eux viennent vous voir et souhaitent installer des émulateurs sur les ordinateurs de l'entreprise pour les pauses-déjeuner. Votre patron est d'accord. Que convient-il de faire au préalable ?
+
+	SOLUTION
+
+Même si l'idée n'est pas professionnelle, elle est possible. Néanmoins, il vous faut vérifier la légalité de chacun des émulateurs. Certains frôlant avec la légalité, les utiliser dans un cadre professionnel n'est pas la meilleure idée, car votre entreprise pourrait s'exposer à des poursuites judiciaires. Vous devez donc en parler à votre patron.

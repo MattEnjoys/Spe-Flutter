@@ -1,0 +1,244 @@
+Dans cet exercice, nous allons mettre en pratique les différents widgets étudiés dans ce cours. Le but est de construire une carte de visite minimaliste avec pour forme un rectangle. La carte sera composée d'une image et de textes. Les textes seront :
+
+L'intitulé de la formation
+
+Le nom de la personne
+
+L'adresse mail de la personne
+
+Il conviendra d'utiliser les widgets Row et Column pour positionner les éléments.
+
+Il faudra intégrer une image au projet.
+
+
+Question
+Créez un projet Flutter, Flutter App. Faites le ménage dans le main.dart de l'application. Créez un widget CarteDeVisite qui viendra au niveau du home dans le widget MaterialApp.
+
+	SOLUTION
+
+import 'package:flutter/material.dart';
+void main() {
+ runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+ @override
+ Widget build(BuildContext context) {
+   return MaterialApp(
+     title: 'Flutter Demo',
+     theme: ThemeData(
+       primarySwatch: Colors.blue,
+     ),
+     home: CarteDeVisite()
+   );
+ }
+}
+ 
+class CarteDeVisite extends StatelessWidget {
+ 
+ @override
+ Widget build(BuildContext context) {
+   // TODO: implement build
+   throw UnimplementedError();
+ }
+}
+Question
+Mettez en place une image dans le projet.
+
+	SOLUTION
+
+Créez un répertoire dans le projet qui contiendra les assets. Puis à l'intérieur de ce dernier, on crée un répertoire image. On glisse l'image dans le répertoire image. Ensuite, il faut modifier le fichier pubspec.yaml pour configurer / indiquer le chemin où se trouve l'image à la rubrique assets.
+
+# To add assets to your application, add an assets section, like this:
+assets:
+- assets/images/beach.png
+#   - images/a_dot_ham.jpeg
+Question
+Insérez le squelette de l'application dans le widget CarteDeVisite. Donnez un titre à l'application. En body, l'application aura un widget Center vide.
+
+	SOLUTION
+
+class CarteDeViste extends StatelessWidget {
+ 
+ @override
+ Widget build(BuildContext context) {
+   return(
+     Scaffold(
+       appBar: AppBar(
+         title: Text("Carte de visite"),
+       ),
+       body: Center()
+       ,
+     )
+   );
+ }
+}
+Question
+Créez une card au milieu de la page d'une hauteur de 150 et largeur de 300 de couleur grey.
+
+	SOLUTION
+
+body: Center(
+ child: Card(
+   child: Container(
+     height: 150,
+     width: 300,
+     color:Colors.grey
+   ),
+ ),
+)
+Question
+Créez trois zones. La première contiendra l'intitulé de la spécialité. Elle occupera ⅕ de la card en hauteur. La deuxième zone contiendra la photo / avatar avec le nom de la personne. Elle fera une hauteur de ⅖ de la card. Une troisième zone de la même proportion que la première contiendra l'e-mail de la personne.
+
+	SOLUTION
+
+Card(
+ child:
+ Container(
+   color: Colors.grey,
+   height: 150,
+   width: 300,
+   child: Column(
+     children: [
+       Expanded(
+           flex:2,
+           child: Container(
+           color: Colors.yellow,
+       )),
+       Expanded(
+           flex:6,
+           child: Container(
+             color:Colors.red
+           )),
+       Expanded(
+           flex:2,
+           child: Container(
+               color:Colors.blue
+           ))
+     ],
+   )
+ ),
+ elevation: 7.5,
+),
+Question
+Insérez l'intitulé de la section dans la première zone.
+
+	SOLUTION
+
+Expanded(
+   flex:2,
+   child: Text("Développeur Full Stack"
+
+)),
+Question
+Dans la zone du milieu, insérez une image à gauche et le nom à droite.
+
+	SOLUTION
+
+Expanded(
+   flex:6,
+   child: Row(
+     children: [
+       Expanded(
+           flex:1,
+           child: Padding(
+             padding: const EdgeInsets.all(8.0),
+             child: Container(
+             child: Image.asset('assets/images/beach.png',),
+       ),
+           )),
+       Expanded(flex:2
+           ,child: Padding(
+             padding: const EdgeInsets.all(8.0),
+             child: Container(
+               child: Text("DUPOND Philippe"),
+
+       ),
+           ))
+     ],
+   )
+),
+Question
+Dans la zone du bas, insérez le texte d'une adresse mail.
+
+	SOLUTION
+
+Expanded(
+   flex:2,
+   child: Row(
+     children: [
+       Padding(
+         padding: const EdgeInsets.all(3.0),
+         child: Text("Email : PhilippeDupond@gmail.com"),
+       )
+     ],
+   )
+)
+Question
+Vérifiez les widgets à l'intérieur de la construction du widget MaCarteDeVisite.
+
+	SOLUTION
+
+class CarteDeVisite extends StatelessWidget  {
+
+ @override
+ Widget build(BuildContext context) {
+   // TODO: implement build
+   return Scaffold(
+     appBar: AppBar(
+       title:Text('Ma carte de Visite')
+     ),
+     body: Center(
+       child: Card(
+         child:
+         Container(
+           color: Colors.black12,
+           height: 150,
+           width: 300,
+           child: Column(
+             children: [
+               Expanded(
+                   flex:2,
+                   child: Text("Développeur Full Stack"
+               )),
+               Expanded(
+                   flex:6,
+                   child: Row(
+                     children: [
+                       Expanded(
+                           flex:1,
+                           child: Padding(
+                             padding: const EdgeInsets.all(8.0),
+                             child: Container(
+                             child: Image.asset('assets/images/beach.png',),
+                       ),
+                           )),
+                       Expanded(flex:2
+                           ,child: Padding(
+                             padding: const EdgeInsets.all(8.0),
+                             child: Container(
+                               child: Text("DUPOND Philippe"),
+
+                       ),
+                           ))
+                     ],
+                   )
+               ),
+               Expanded(
+                   flex:2,
+                   child: Row(
+                     children: [
+                       Padding(
+                         padding: const EdgeInsets.all(3.0),
+                         child: Text("Email : PhilippeDupond@gmail.com"),
+                       )
+                     ],
+                   )
+               )
+             ],
+           )
+         ),
+         elevation: 7.5,
+       ),
+     ),
+   );
+ }

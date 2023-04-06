@@ -1,0 +1,35 @@
+Est-ce que vous aussi, vous vous demandez à peu près toutes les 10 minutes l'heure qu'il est ? Vous regardez inlassablement votre montre ou votre smartphone, etc. et si nous trouvions une manière plus originale de nous indiquer l'heure ?
+
+Nous allons faire de vous une personne 2.0, grâce à un programme qui vous indiquera l'heure qu'il est à chaque fois que vous exécuterez ce programme. Une bonne manière de d'ores et déjà mettre la technologie à votre service.
+
+Question
+Vous devez créer un programme qui, quand vous mettrez l'heure en argument au moment de son lancement, affichera « Il est 14 h 45 ! » ou « Il est 17 h 22 !  », etc.
+
+Indice
+Dans le terminal, la commande permettant de récupérer l'heure est $(date +%R).
+
+	SOLUTION
+
+void main(List<String> args) {
+	print(« Il est » + args[0] «  ! »);
+}
+Exécution du code avec la commande :
+
+dart run quelleheureilest.dart $(date +%R)
+
+Question
+Vous devez créer un programme avec une fonction main() appelant une autre fonction qui affiche l'heure et la date (sans la mettre en argument cette fois-ci).
+
+Indice
+En Dart, il est possible de récupérer l'heure avec DateTime.now();
+
+	SOLUTION
+
+void main() {
+	afficherlheure();
+}
+
+void afficherlheure() {
+	final String heure = DateTime.now().toString();
+	print(heure);
+}

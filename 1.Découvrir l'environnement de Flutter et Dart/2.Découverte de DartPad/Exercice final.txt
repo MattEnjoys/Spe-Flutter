@@ -1,0 +1,61 @@
+Découverte de DartPad
+contenumenunavigationoutils
+Dans cet exercice, nous allons utiliser et mettre en application les différentes fonctionnalités du DartPad vues dans ce cours. Les actions demandées doivent être effectuées via le DartPad :
+
+Question
+Ouvrez DartPad dans un navigateur Internet.
+
+	SOLUTION
+
+Entrez l'URL https://dartpad.dev/ dans un navigateur moderne.
+
+
+Question
+Créez une nouvelle instance de DartPad.
+
+	SOLUTION
+
+Cliquez sur « New Pad », sélectionnez Dart puis cliquez sur « Create ».
+
+
+
+Question
+Utilisez le panneau d'édition du code pour créer un programme qui affiche uniquement « Hello world » dans la console. Exécutez le programme.
+
+	SOLUTION
+
+Voici un exemple du programme attendu et le résultat affiché dans la console :
+
+
+
+Question
+Réinitialisez l'éditeur de code. Exécutez le programme.
+
+	SOLUTION
+
+Cliquez sur « Reset », puis sur le bouton « Run » pour exécuter le code :
+
+
+Question
+Ajoutez des espaces inutiles au sein du code puis auto-formatez le code.
+
+	SOLUTION
+
+Ajoutez des espaces inutiles :
+
+
+Puis cliquez sur « Format » :
+
+
+Le code s'autoformate et revient à la normale :
+
+
+Question
+Repérez la version du Dart SDK puis affichez-la dans la console avec la fonction print.
+
+	SOLUTION
+
+Repérez la version de Dart SDK en bas à droite du DartPad :
+
+
+Puis utilisez la fonction « print » pour afficher le résultat dans la console :

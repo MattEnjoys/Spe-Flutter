@@ -1,0 +1,40 @@
+Les gestes sont essentiels pour l'échange d'interactions entre l'utilisateur et l'écran. Si bien que, lorsque vous créez un projet Flutter, l'application par défaut consiste en un simple compteur vous permettant de voir que oui, votre premier projet fonctionne bien !
+
+
+Et si nous reprenions cette app ?
+
+Dans cet exercice, nous allons reprendre l'application fournie au moment de la création d'un projet Flutter et essayer de recréer les mêmes actions grâce à un GestureDetector.
+
+Question
+Créer un projet Flutter web Flutter.
+
+Ouvrir l'app fournie par défaut grâce au navigateur.
+
+Utiliser un GestureDetector qui englobe le bouton au lieu de la solution built-in pour réaliser la même chose.
+
+Supprimer le floating action button et créer un container de 50 px par 150 px ayant un GestureDetector en child. Le placer dans la colonne. Ce bouton devra faire la même chose que le précédent bouton.
+
+	SOLUTION
+
+Première réponse :
+
+Il faut modifier le FloatingActionButton.
+
+floatingActionButton: GestureDetector(
+         onTap: _incrementCounter,
+         child: FloatingActionButton(
+           tooltip: 'Increment',
+           child: Icon(Icons.add),
+         ), // This trailing comma makes auto-formatting nicer for build methods.
+       ));
+Dans les faits, il ne faut jamais mettre un GestureDetector quand on a une solution built-in ! Mais ceci vous permet d'expérimenter toutes les possibilités.
+
+Deuxième réponse :
+
+Container(
+               height: 50,
+               width: 150,
+               color: Colors.blue,
+               child: GestureDetector(
+                 onTap: _incrementCounter,
+               ))

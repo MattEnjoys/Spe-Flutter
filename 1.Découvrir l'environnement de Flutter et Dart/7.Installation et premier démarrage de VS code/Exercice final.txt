@@ -1,0 +1,17 @@
+Vous êtes un nouveau développeur, vous venez d’arriver dans une nouvelle entreprise et on vous met à disposition plusieurs choix. Cependant, votre supérieur vous demande de bien vouloir les justifier afin qu’il puisse vous proposer l’environnement de travail le plus idéal. Vous travaillerez principalement sur du JS.
+
+Question
+Quel système d’exploitation souhaitez-vous pour travailler avec VSCode ?
+
+	SOLUTION
+
+Comme expliqué pendant le cours, VSCode est compatible avec toutes les versions disponibles sur le marché, que ce soit macOS, Linux ou bien Windows. Mais il est important de se rappeler que VSCode étant tout de même fait par Microsoft, il est légèrement plus optimisé pour Windows. Au vu des langages qui vont être travaillés, il n’est pas spécifiquement nécessaire d’avoir un Mac et l’idée de Linux, bien que pertinente, peut poser un problème si l’entreprise travaille sur d’autres logiciels. Afin d’obtenir un rendement idéal, il est plus pertinent de demander un bon PC équipé de Windows pour éviter tout soucis d’incompatibilité et une compatibilité maximale avec VSCode.
+
+Question
+Vous recevez votre premier alternant la semaine prochaine, vous devez donc rapidement lui expliquer les tâches nécessaires à la configuration de son environnement de travail.
+
+Comment expliquez-vous les étapes d’installation ?
+
+	SOLUTION
+
+Dans un premier temps, il est nécessaire de télécharger VSCode sur le site de la plateforme. Comme nous travaillons sur Windows, il faut trouver la bonne version en adéquation avec notre système d’exploitation. Une fois le téléchargement fait, il faudra installer le logiciel et une fois cette étape accomplie, il faudra lancer le logiciel une première fois puis installer les langages sur lesquels nous allons développer, dans notre cas JavaScript, Angular, Node, etc. Il est aussi nécessaire de choisir le thème de l’interface sur laquelle vous allez travailler, fond noir, fond blanc, haut contraste. Une fois ces paramètres établis, vous serez prêt pour développer sereinement.

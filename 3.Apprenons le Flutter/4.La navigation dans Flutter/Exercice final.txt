@@ -1,0 +1,56 @@
+Vous développez une application mobile : un nouveau réseau social. Vous souhaitez créer une page d'accueil qui sort des standards grâce à une animation de transition entre 2 pages, et une page de dialogue qui permettra de quitter l'application.
+
+Dans cet exercice, nous allons créer 2 pages dont une contenant 2 boutons, un bouton ouvrant une page de dialogue demandant à l'utilisateur s'il veut quitter l'application, et l'autre bouton naviguant vers la seconde page, qui contient elle-même un bouton permettant de revenir en arrière.
+
+Conseil :
+
+Pour quitter l'application, vous pouvez utiliser SystemNavigator.pop() de la libraire import package:flutter/services.dart ou exit(0) de la librairie dart:io.
+
+Question
+Créez une page contenant simplement un bouton au centre de l'écran.
+
+	SOLUTION
+
+Nous avons donc ici la fonction main() contenant la FirstPage(), qui elle-même contient une Scaffold(), et dans son body, notre bouton centré à l'écran.
+
+Question
+Assignez la fonction d'ouverture d'une AlertDialog grâce à la fonction showDialog au bouton de l'écran.
+
+	SOLUTION
+
+Nous avons donc ajouté la fonction showDialog() retournant le widget AlertDialog, avec une liste d'action vide.
+
+Question
+Mettez en place 2 boutons dans cette AlertDialog, possédant comme titre « êtes-vous sûr de vouloir quitter l'application ? », un bouton « Oui » et un bouton « Non » (si l'utilisateur clique sur « Oui », cela ferme l'application, si l'utilisateur clique sur « Non », cela revient sur la page principale).
+
+	SOLUTION
+
+Celle-ci contient 2 boutons, qui retournent vrai » ou « faux » en fonction du résultat. Ce même résultat sera stocké dans la variable result qui sera par la suite testée, et si celle-ci est vrai, quittera l'application.
+
+Attention à ne pas oublier d'inclure la librairie pour pouvoir appeler SystemNavigator.pop().
+
+
+Question
+Mettez en place un second bouton en dessous du bouton de pop-up, et une seconde page pas encore joignable par l'application qui possède elle aussi un bouton au centre de l'écran.
+
+	SOLUTION
+
+Nous avons donc ajouté un widget Column pour pouvoir mettre un bouton en plus en dessous du bouton de dialogue. Le bouton a par la suite été rajouté.
+
+
+Et nous avons ici la deuxième page de notre application, avec un bouton centré qui pour l'instant n'a pas d'utilité.
+
+Question
+Liez ces 2 pages par une animation transition de votre choix entre SlideTransition et ScaleTransition.
+
+	SOLUTION
+
+Pour la FirstPage :
+
+
+Pour la SecondPage :
+
+
+Pour cette dernière question, nous avons développé la fonction createPageRoute qui va appliquer la SlideTransition. Ici, nous allons de bas en haut à cause de notre Tween. La CurveTween choisie est Curves.ease.
+
+Enfin, il reste à implémenter les 2 callback des 2 boutons restants, Button 2 et 3. Le 2 appellera donc Navigator.push() qui ajoutera la nouvelle route dans la pile de Navigator, et le Button 3 permettra de retirer cette route de la pile, ce qui fera revenir à FirstScreen.

@@ -1,0 +1,31 @@
+Si vous avez un peu joué aux jeux vidéo, vous avez alors sûrement eu l'occasion de pouvoir imaginer un avatar. De la couleur de ses yeux à son âge, en passant par sa tenue vestimentaire, ce sont autant de variables qui vous étaient proposées et qui vous permettaient de créer le personnage de vos rêves.
+
+Il est temps de s'y replonger !
+
+Question
+Créez une instance Personnage, contenant elle-même les variables prénom, couleur de cheveux et âge dont les valeurs par défaut seront nulles. À vous d'indiquer ces variables comme finales si vous jugez qu'elles ne changeront jamais !
+
+	SOLUTION
+
+class Personnage {
+	final String prenom;
+	String cheveux;
+	num age;
+}
+Question
+Créez la même instance, mais rajoutez les valeurs par défaut « Charlie », « bleue », « 24 ».
+
+	SOLUTION
+
+class Personnage {
+	final String prenom = ‘Charlie';
+	String cheveux = ‘bleue';
+	num age = 24;
+}
+Question
+Imaginez qu'il existe une fonction creerPersonnage() qui permette de créer un personnage avec des caractéristiques aléatoires, mais dont l'exécution prend du temps. Dans ma fonction, je ne suis pas sûr d'avoir besoin de cette variable personnage. Comment puis-je déclarer ma variable ?
+
+	SOLUTION
+
+Late Personnage personnage = creerPersonnage();
+En effet, si l'exécution prend du temps et que nous ne sommes pas sûrs d'avoir à utiliser la variable, late permet de ne lancer la fonction uniquement si la variable est utilisée.

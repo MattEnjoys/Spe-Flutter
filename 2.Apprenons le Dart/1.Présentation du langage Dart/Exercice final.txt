@@ -1,0 +1,62 @@
+Dans cet exercice, vous allez refaire un Hello world amélioré dans le DartPad.
+
+Question
+Faire quelques lignes, pour décrire notre programme.
+
+	SOLUTION
+
+On commence un bloc de commentaire.
+
+/* Ceci est un hello world amélioré
+
+on va déclarer plusieurs variables et les afficher
+
+*/
+
+Question
+Déclarer la fonction principale et son bloc.
+
+	SOLUTION
+
+void main() {
+
+}
+
+Question
+Déclarer une variable pour stocker votre prénom.
+
+	SOLUTION
+
+var monPrenom = “Eric”
+
+Question
+Afficher « hello world » et votre prénom sur deux lignes.
+
+	SOLUTION
+
+print("hello world");
+
+print(monPrenom);
+
+Question
+Déclarer une variable age ne connaissant pas son type.
+
+	SOLUTION
+
+dynamic age
+
+Question
+Initialiser l'age en chaîne de caractères.
+
+	SOLUTION
+
+age = “25 ans”
+
+Question
+Afficher le type de la variable.
+
+	SOLUTION
+
+Pour afficher le type d'une variable il faut utiliser la méthode runtimetype.
+
+print(age.runtimeType)

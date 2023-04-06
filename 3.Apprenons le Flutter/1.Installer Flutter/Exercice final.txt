@@ -1,0 +1,43 @@
+Au sein de votre entreprise KILOBAG, vous intégrez la Direction des Systèmes d'Informations. Vous êtes amené, vous et votre équipe, à installer Flutter pour le développement d'une application mobile de transports routiers et à effectuer la configuration du système sur Windows.
+
+Question
+À l'aide de la méthodologie expliquée dans le cours, expliquez le déroulement des étapes de l'installation complète de Flutter dans le système Windows.
+
+	SOLUTION
+
+Étape 01 : Télécharger Git avant d'utiliser Flutter,
+
+Étape 02 : Télécharger Flutter,
+
+Étape 03 : Dézipper le fichier téléchargé,
+
+Étape 04 : Créer un dossier, puis le renommer SDK sur le répertoire C:/,
+
+Étape 05 : Enregistrer sur le répertoire C:/SDK/Flutter du fichier dézippé,
+
+Étape 06 : Configurer l'environnement système à l'aide de la barre Windows,
+
+Étape 07 : Modifier les variables d'environnement système et sélectionner la variable path,
+
+Étape 08 : Ouvrir la fenêtre CMD puis lancer la commande Flutter.
+
+Question
+Citez les différences entre la configuration dans le système Windows et le système MacOS.
+
+	SOLUTION
+
+Différences - Configuration Windows et MacOS
+
+Système Windows
+
+Système MacOS
+
+Modification des variables d'environnement dans le système.
+
+Aucune modification à apporter sur les lignes de commande.
+
+Ouverture du terminal de lignes de commande.
+
+Utilisation de la ligne de commande suivante : exportPATH="$PATH:/Users/$USER/SDK/flutter/bin".
+
+Modification du fichier de configuration du terminal à l'aide de la page GNU nano.

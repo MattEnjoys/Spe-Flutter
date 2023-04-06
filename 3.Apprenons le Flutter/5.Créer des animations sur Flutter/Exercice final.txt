@@ -1,0 +1,60 @@
+Maintenant que vous avez appris à créer des animations explicites et implicites, il est temps de le mettre en pratique !
+
+Question
+Nous allons simplement créer la superposition de 3 animations différentes dans une colonne :
+
+La première est un container vert carré de 100 x 100, qui tourne sur lui-même en permanence.
+
+La deuxième est un container rond, qui change de couleur une seule fois, au moment où le widget est créé.
+
+Le troisième est un container qui s'agrandit ou rétrécit uniquement lorsqu'un bouton est activé.
+
+Toutes ses animations doivent se faire en 7 secondes.
+
+Avant de vous lancer, prenez le temps de vous poser les bonnes questions ! Mon widget doit-il se relancer en permanence ? A-t-il des discontinuités ?
+
+À vous de jouer !
+
+	SOLUTION
+
+import 'package:flutter/material.dart'; import 'dart:math' as math;
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatefulWidget { @override
+State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin { AnimationController _controller;
+bool _bigger = true;
+
+@override
+void initState() { super.initState();
+_controller = AnimationController( duration: const Duration(seconds: 7), vsync: this,
+)..repeat();
+}
+
+@override void dispose() {
+_controller.dispose(); super.dispose();
+}
+
+@override
+Widget build(BuildContext context) { return MaterialApp(
+home: Column( children: [ AnimatedBuilder(
+animation: _controller,
+child: Container(width: 100.0, height: 100.0, color: Colors.green), builder: (BuildContext context, Widget child) {
+return Transform.rotate(
+angle: _controller.value * 2.0 * math.pi, child: child,
+ 
+);
+},
+),
+TweenAnimationBuilder<Color>(
+tween: ColorTween(begin: Colors.red, end: Colors.yellow), duration: Duration(seconds: 7),
+builder: (BuildContext _, Color value, Widget     ) { return ColorFiltered(
+colorFilter: ColorFilter.mode(value, BlendMode.modulate), child: ClipRRect(
+borderRadius: BorderRadius.circular(100), child: Container(
+color: Colors.white, height: 100, width: 100)));
+},
+),
+Column( children: [
